@@ -27,4 +27,4 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Build and push Docker image
-        uses: npx app.json validate
+        run: npx app.json validate
