@@ -24,6 +24,6 @@
     }
   },
  "addons": [
-    "heroku-redis",
+    "heroku-redis"
   ]
 }
