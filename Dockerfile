@@ -1,1 +1,1 @@
-FROM ghcr.io/diesdasdigital/zon-speechbert-os:main
+FROM ghcr.io/diesdasdigital/morpheme:main
