@@ -22,5 +22,8 @@
     "GOOGLE_CREDENTIALS": {
       "required": true
     }
-  }
+  },
+ "addons": [
+    "heroku-redis",
+  ]
 }
