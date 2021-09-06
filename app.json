@@ -12,6 +12,11 @@
     "AWS_SECRET_ACCESS_KEY": {
       "required": true
     },
+    "AWS_REGION": {
+      "required": true,
+      "description": "For the list of available regions see: https://docs.aws.amazon.com/general/latest/gr/rande.html",
+      "value": "eu-central-1"
+    },
     "BUCKET_NAME": {
       "required": true
     },
