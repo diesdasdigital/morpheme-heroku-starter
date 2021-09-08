@@ -26,6 +26,11 @@
     },
     "GOOGLE_CREDENTIALS": {
       "required": true
+    },
+    "LOG_LEVEL": {
+      "required": true,
+      "description": "For the list of available options see: https://github.com/pinojs/pino/blob/master/docs/api.md#loggerlevel-string-gettersetter",
+      "value": "info"
     }
   },
  "addons": [
