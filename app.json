@@ -23,7 +23,7 @@
       "description": "For the list of available regions see: https://docs.aws.amazon.com/general/latest/gr/rande.html",
       "value": "eu-central-1"
     },
-    "BUCKET_NAME": {
+    "AWS_BUCKET": {
       "required": true
     },
     "GOOGLE_APPLICATION_CREDENTIALS": {
