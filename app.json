@@ -20,6 +20,11 @@
     "AWS_BUCKET": {
       "required": true
     },
+    "BEARER_TOKEN": {
+      "required": true,
+      "description": "A secret token for authenticating protected endpoints",
+      "generator": "secret"
+    },
     "GOOGLE_APPLICATION_CREDENTIALS": {
       "required": true,
       "value": "google-credentials.json"
