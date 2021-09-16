@@ -1,6 +1,7 @@
 name: Initialize
 
-on: "create"
+on:
+ - create
 
 jobs:
   docker-build:
