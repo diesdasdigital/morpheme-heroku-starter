@@ -1,7 +1,9 @@
 name: Initialize
 
 on:
- - create
+  push:
+    branches:
+      - main
 
 jobs:
   docker-build:
