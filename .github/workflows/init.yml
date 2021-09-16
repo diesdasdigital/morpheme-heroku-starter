@@ -9,3 +9,11 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+
+      - name: Remove this action
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git rm ./.github/workflows/init.yml
+          git commit -m 'Remove init.yml'
+          git push
