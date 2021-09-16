@@ -1,1 +1,1 @@
-FROM ghcr.io/diesdasdigital/morpheme:0.0.11
+FROM ghcr.io/diesdasdigital/morpheme:v0.0.11
