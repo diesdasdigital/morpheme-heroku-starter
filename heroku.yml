@@ -6,5 +6,5 @@ build:
     web: Dockerfile
     worker: Dockerfile
 run:
-  web: yarn start
-  worker: yarn start:worker
+  web: bin/web
+  worker: bin/worker
