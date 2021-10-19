@@ -20,10 +20,10 @@ To spin up your own local instance of this application, follow these instruction
 
 1. Ensure that you have [`docker`](https://docs.docker.com/get-docker/) and [`docker-compose`](https://docs.docker.com/compose/install/) installed.
 2. Create a `.env` file at the project root, using [`.env.sample`](https://github.com/diesdasdigital/morpheme/blob/main/.env.sample) as a template. Fill in all of the secret values.
-2. Create a `google-credentials.json` file at the project root, using your Google Service account credentials.
-3. Optionally, edit `config.json` if you wish to override any configuration defaults. Refer to [`docs/CONFIG.md`](https://github.com/diesdasdigital/morpheme/blob/main/docs/CONFIG.md) for more details.
-3. Optionally, edit `replacements.json` if you wish to augment the builtin replacements. Refer to [`docs/REPLACEMENTS.md`](https://github.com/diesdasdigital/morpheme/blob/main/docs/REPLACEMENTS.md) for more details.
-4. Start the application with `docker-compose up --build`.
+3. Create a `google-credentials.json` file at the project root, using your Google Service account credentials.
+4. Optionally, edit `config.json` if you wish to override any configuration defaults. Refer to [`docs/CONFIG.md`](https://github.com/diesdasdigital/morpheme/blob/main/docs/CONFIG.md) for more details.
+5. Optionally, edit `replacements.json` if you wish to augment the builtin replacements. Refer to [`docs/REPLACEMENTS.md`](https://github.com/diesdasdigital/morpheme/blob/main/docs/REPLACEMENTS.md) for more details.
+6. Start the application with `docker-compose up --build`.
 
 ## Upgrading to a new Morpheme release
 
@@ -42,7 +42,7 @@ Then, you'll need to trigger a new Heroku deployment (see [Deployment](#Deployme
 
 Morpheme uses the Google Cloud Text-to-Speech and Natural Language APIs to generate audio from text. The resulting audio files are stored on Amazon S3.
 
-You will need a Google Cloud as well as an AWS Account to setup the application and configur them according to the steps below.
+You will need a Google Cloud as well as an AWS Account to setup the application and configure them according to the steps below.
 
 ### AWS
 
@@ -56,3 +56,5 @@ You will need a Google Cloud as well as an AWS Account to setup the application 
 - [Create a new Service Account/Project](https://cloud.google.com/iam/docs/creating-managing-service-accounts) for your instance of Morpheme from the [Service Accounts Page](https://console.cloud.google.com/iam-admin/serviceaccounts) of the Google Cloud Console.
 - [Enable](https://cloud.google.com/service-usage/docs/enable-disable) the [Cloud Text-to-Speech](https://console.cloud.google.com/marketplace/product/google/texttospeech.googleapis.com) and [Cloud Natural Language](https://console.cloud.google.com/marketplace/product/google/language.googleapis.com) API for the service account you just created.
 - [Create a Service Account Access Key](https://cloud.google.com/docs/authentication/getting-started) and store the JSON key file in a secure place.
+
+The Google Cloud and AWS credentials need to be added as Config Variables the app for it to be sucesfully deployed. You'll be prompted to enter them in Herokus's "Create New App" interface after clicking the "Deploy to Heroku" button.
