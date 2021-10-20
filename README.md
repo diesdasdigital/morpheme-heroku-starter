@@ -57,4 +57,6 @@ You will need a Google Cloud as well as an AWS Account to setup the application 
 - [Enable](https://cloud.google.com/service-usage/docs/enable-disable) the [Cloud Text-to-Speech](https://console.cloud.google.com/marketplace/product/google/texttospeech.googleapis.com) and [Cloud Natural Language](https://console.cloud.google.com/marketplace/product/google/language.googleapis.com) API for the service account you just created.
 - [Create a Service Account Access Key](https://cloud.google.com/docs/authentication/getting-started) and store the JSON key file in a secure place.
 
-The Google Cloud and AWS credentials need to be added as Config Variables the app for it to be sucesfully deployed. You'll be prompted to enter them in Herokus's "Create New App" interface after clicking the "Deploy to Heroku" button.
+The Google Cloud and AWS credentials need to be added as Config Variables to the app for it to be deployed successfully. You'll be prompted to enter them in Herokus's "Create New App" interface after clicking the "Deploy to Heroku" button.
+
+To connect the app to S3 the 'Access Key ID', 'Secret Access Key' and the name of the bucket need to be entered in Heroku's setup form. To use Google Cloud APIs the contents of the JSON key file need to be copied in the corresponding field to the same form.
