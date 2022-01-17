@@ -22,7 +22,7 @@ To spin up your own local instance of this application, follow these instruction
 2. Create a `.env` file at the project root, using [`.env.sample`](https://github.com/diesdasdigital/morpheme/blob/main/.env.sample) as a template. Fill in all of the secret values.
 3. Create a `google-credentials.json` file at the project root, using your Google Service account credentials.
 4. Optionally, edit `config.json` if you wish to override any configuration defaults. Refer to [`docs/CONFIG.md`](https://github.com/diesdasdigital/morpheme/blob/main/docs/CONFIG.md) for more details.
-5. Optionally, edit `replacements.json` if you wish to augment the builtin replacements. Refer to [`docs/REPLACEMENTS.md`](https://github.com/diesdasdigital/morpheme/blob/main/docs/REPLACEMENTS.md) for more details.
+5. Optionally, edit `replacements.json` if you wish to augment the built-in replacements. Refer to [`docs/REPLACEMENTS.md`](https://github.com/diesdasdigital/morpheme/blob/main/docs/REPLACEMENTS.md) for more details.
 6. Start the application with `docker-compose up --build`.
 
 ## Upgrading to a new Morpheme release
