@@ -1,10 +1,5 @@
 {
   "stack": "container",
-  "buildpacks": [
-    {
-      "url": "https://github.com/elishaterada/heroku-google-application-credentials-buildpack"
-    }
-  ],
   "env": {
     "AWS_ACCESS_KEY_ID": {
       "required": true
@@ -25,7 +20,12 @@
       "description": "A secret token for authenticating protected endpoints",
       "generator": "secret"
     },
-    "GOOGLE_CREDENTIALS": {
+    "GOOGLE_SERVICE_ACCOUNT_CLIENT_EMAIL": {
+      "description": "Extract the value for `client_email` from your Google Service Account JSON credentials file.",
+      "required": true
+    },
+    "GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY": {
+      "description": "Extract the value for `private_key` from your Google Service Account JSON credentials file.",
       "required": true
     },
     "LOG_LEVEL": {
