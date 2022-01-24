@@ -1,10 +1,5 @@
 {
   "stack": "container",
-  "buildpacks": [
-    {
-      "url": "https://github.com/elishaterada/heroku-google-application-credentials-buildpack"
-    }
-  ],
   "env": {
     "AWS_ACCESS_KEY_ID": {
       "required": true
